@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="../public/js/vendor/summernote/summernote.css">
+<script src="../public/js/vendor/summernote/summernote.js"></script>
+<script src="../public/js/vendor/summernote/lang/summernote-zh-CN.js"></script>
+
+<div class="content_wrapper">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <aside>
+                    <header><i class="fa fa-fw fa-file"></i>summernote</header>
+                    <section>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="alert alert-success">
+                                        summernote官网：<a target="_blank" href="http://summernote.org/">http://summernote.org/</a>
+                                        <br/>
+                                        <i class="fa fa-warning"></i> <b>注意：summernote不支持IE8</b>
+                                    </div>
+                                    <form class="form-horizontal" role="form" method="get" action="../server/ajaxReturn.json">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">新闻标题</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" placeholder="新闻标题" name="title">
+                                            </div>
+                                            <p class="col-sm-6 help-block"></p>
+                                        </div>
+                                        <hr/>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">作者</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" placeholder="作者" name="author">
+                                            </div>
+                                            <p class="col-sm-6 help-block"></p>
+                                        </div>
+                                        <hr/>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">简介</label>
+                                            <div class="col-sm-10">
+                                                <div class="form-control" id="summernote"></div>
+                                            </div>
+                                        </div>
+                                        <hr/>
+                                        <div class="form-group">
+                                            <div class=" col-sm-12">
+                                                <button type="button" class="btn btn-primary J_ajaxSubmitBtn">提交</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $('#summernote').summernote({
+        lang: 'zh-CN',
+        height: 300,
+        callbacks: {
+            onInit: function () {
+            },
+            onFocus: function () {
+            },
+            onBlur: function () {
+                var $this = $(this);
+                console.log($this);
+            }
+        }
+    });
+</script>

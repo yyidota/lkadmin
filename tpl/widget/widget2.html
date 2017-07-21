@@ -1,0 +1,118 @@
+<div class="content_wrapper">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <aside>
+                    <header><i class="fa fa-fw fa-file"></i>树形视图</header>
+                    <section>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form method="get" action="../server/ajaxReturn.json">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover J_tree_table" cellspacing="0" width="100%" id="tree_table1">
+                                                <thead>
+                                                <tr>
+                                                    <th width="40"></th>
+                                                    <th>[顺序] 菜单中文名称</th>
+                                                    <th>菜单英文名称</th>
+                                                    <th>id</th>
+                                                    <th>启用</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="J_pull_btn pull_down"></span></td>
+                                                        <td><input type="text" value="1"/>菜单1</td>
+                                                        <td>site_config</td>
+                                                        <td>23</td>
+                                                        <td><input type="checkbox" checked="checked"/></td>
+                                                        <td>
+                                                            <a class="btn btn-primary btn-xs">编辑</a>
+                                                            <button type="button" class="btn btn-warning btn-xs J_confirm_modal" data-tip="一定要删除？" data-target="../server/ajaxReturn.json">删除</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></span></td>
+                                                        <td><span class="end"></span><input type="text" value="1"/>菜单1-1
+                                                        </td>
+                                                        <td>site_config</td>
+                                                        <td>23</td>
+                                                        <td><input type="checkbox" checked="checked" /></td>
+                                                        <td>
+                                                            <a class="btn btn-primary btn-xs">编辑</a>
+                                                            <button type="button" class="btn btn-warning btn-xs J_confirm_modal" data-tip="一定要删除？" data-target="../server/ajaxReturn.json">删除</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td><span class="space"></span><span class="end"></span><input type="text" value="1"/>菜单1-1-1</td>
+                                                        <td>site_config</td>
+                                                        <td>23</td>
+                                                        <td><input type="checkbox" checked="checked" /></td>
+                                                        <td>
+                                                            <a class="btn btn-primary btn-xs">编辑</a>
+                                                            <button type="button" class="btn btn-warning btn-xs J_confirm_modal" data-tip="一定要删除？" data-target="../server/ajaxReturn.json">删除</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="J_pull_btn pull_down"></span></td>
+                                                        <td><input type="text" value="2"/>菜单2</td>
+                                                        <td>site_config</td>
+                                                        <td>23</td>
+                                                        <td><input type="checkbox" checked="checked"/></td>
+                                                        <td>
+                                                            <a class="btn btn-primary btn-xs">编辑</a>
+                                                            <button type="button" class="btn btn-warning btn-xs J_confirm_modal" data-tip="一定要删除？" data-target="../server/ajaxReturn.json">删除</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td><span class="end"></span><input type="text"/>菜单2-1</td>
+                                                        <td>site_config</td>
+                                                        <td>23</td>
+                                                        <td><input type="checkbox" checked="checked"/></td>
+                                                        <td>
+                                                            <a class="btn btn-primary btn-xs">编辑</a>
+                                                            <button type="button" class="btn btn-warning btn-xs J_confirm_modal" data-tip="一定要删除？" data-target="../server/ajaxReturn.json">删除</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="blank_btn"></span></td>
+                                                        <td><input type="text" value="3"/>菜单3</td>
+                                                        <td>site_config</td>
+                                                        <td>23</td>
+                                                        <td><input type="checkbox" checked="checked"/></td>
+                                                        <td>
+                                                            <a class="btn btn-primary btn-xs">编辑</a>
+                                                            <button type="button" class="btn btn-warning btn-xs J_confirm_modal" data-tip="一定要删除？" data-target="../server/ajaxReturn.json">删除</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="lineW" style="margin-bottom:8px;">
+                                            <button type="button" class="btn btn-xs J_tree_table_all_open" data-target="#tree_table1"><i class="fa fa-caret-down"></i>全部展开</button>
+                                            <button type="button" class="btn btn-xs J_tree_table_all_close" data-target="#tree_table1"><i class="fa fa-caret-up"></i>全部收起</button>
+                                        </div>
+                                        <hr/>
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-primary J_ajaxSubmitBtn">提交</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+</div>
