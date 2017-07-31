@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="../public/js/vendor/DataTables/css/dataTables.bootstrap.css">
-<script src="../public/js/vendor/DataTables/js/jquery.dataTables.min.js"></script>
-<script src="../public/js/vendor/DataTables/js/dataTables.bootstrap.min.js"></script>
 <div class="content_wrapper">
 
     <div class="container-fluid">
@@ -16,51 +13,80 @@
                                         <a class="btn btn-default" href="#class/add.html"><i class="fa fa-file-o"></i>添加分类</a>
                                     </div>
                                 </div>
-                          </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered table-hover" id="example" cellspacing="0" width="100%">
-                                            <thead>
-                                            <tr>
-                                                <th width="80">id</th>
-                                                <th>名称</th>
-                                                <th width="140">操作</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>行业新闻</td>
-                                                <td>
-                                                    <a class="btn btn-primary btn-xs">编辑</a>
-                                                    <button class="btn btn-warning btn-xs J_confirm_modal" data-target="../server/ajaxReturn.json" data-tip="一定要删除？" type="button">删除</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>产品快讯</td>
-                                                <td>
-                                                    <a class="btn btn-primary btn-xs">编辑</a>
-                                                    <button class="btn btn-warning btn-xs J_confirm_modal" data-target="../server/ajaxReturn.json" data-tip="一定要删除？" type="button">删除</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>蓝科动态</td>
-                                                <td>
-                                                    <a class="btn btn-primary btn-xs">编辑</a>
-                                                    <button class="btn btn-warning btn-xs J_confirm_modal" data-target="../server/ajaxReturn.json" data-tip="一定要删除？" type="button">删除</button>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div>
+													</div>
+													<!--搜索 S-->
+													<div class="row" style="margin-bottom:20px;">
+														<div class="col-sm-6">
+															<div class="input-group">
+																<input type="text" class="form-control" placeholder="请输入搜索关键字">
+																<span class="input-group-btn">
+																	<button class="btn btn-default" type="button">搜索</button>
+																</span>
+															</div><!-- /input-group -->
+														</div>
+														<div class="col-sm-6"></div>														
+													</div>
+													<!--搜索 E-->
+													<div class="row">
+															<div class="col-sm-12">
+																	<div class="table-responsive">
+																			<table class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+																					<thead>
+																					<tr>
+																							<th width="80">id</th>
+																							<th>名称</th>
+																							<th width="140">操作</th>
+																					</tr>
+																					</thead>
+																					<tbody>
+																					<tr>
+																							<td>1</td>
+																							<td>行业新闻</td>
+																							<td>
+																									<a class="btn btn-primary btn-xs">编辑</a>
+																									<button class="btn btn-warning btn-xs J_confirm_modal" data-target="../server/ajaxReturn.json" data-tip="一定要删除？" type="button">删除</button>
+																							</td>
+																					</tr>
+																					<tr>
+																							<td>2</td>
+																							<td>产品快讯</td>
+																							<td>
+																									<a class="btn btn-primary btn-xs">编辑</a>
+																									<button class="btn btn-warning btn-xs J_confirm_modal" data-target="../server/ajaxReturn.json" data-tip="一定要删除？" type="button">删除</button>
+																							</td>
+																					</tr>
+																					<tr>
+																							<td>3</td>
+																							<td>蓝科动态</td>
+																							<td>
+																									<a class="btn btn-primary btn-xs">编辑</a>
+																									<button class="btn btn-warning btn-xs J_confirm_modal" data-target="../server/ajaxReturn.json" data-tip="一定要删除？" type="button">删除</button>
+																							</td>
+																					</tr>
+																					</tbody>
+																			</table>
+																	</div>
+																	
+															</div>
+													</div>
+													<div class="row">
+														<div class="col-sm-12 text-center">
+															<!--分页 S-->
+																<div class="pager">
+																	<ul>
+																		<li><a href="#">Prev</a></li>
+																		<li><a href="#">1</a></li>
+																		<li><a href="#">2</a></li>
+																		<li><a href="#">3</a></li>
+																		<li><a href="#">4</a></li>
+																		<li><a href="#">5</a></li>
+																		<li><a href="#">Next</a></li>
+																	</ul>
+																</div>
+																<!--分页 E-->
+														</div>
+													</div>
+												</div>
                     </section>
                 </aside>
             </div>
@@ -69,17 +95,4 @@
 
 </div>
 <script>
-    $(document).ready(function () {
-        $('#example').DataTable({
-            /*paging: false,
-            lengthChange: false,
-            searching: false,
-            ordering: false,
-            info: false,*/
-            scrollX: true,
-            "language": {
-                url:'../public/js/vendor/DataTables/Chinese.json'
-            }
-        });
-    });
 </script>
